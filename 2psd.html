@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #sec-1 {
+            height: auto;
+            width: auto;
+            background-color:#21243d;
+            padding: 15px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .logo {
+            height: 50px;
+            width: 200px;
+            /* border: 2px solid red; */
+            background: url(lo.svg);
+            background-size: contain;
+            /* background-repeat: no-repeat; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: 25px;
+        }
+        .search-bar {
+            height: 50px;
+            width: 150px;
+            /* border: 2px solid red; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        @media only screen and(max-width:600px) {
+            #sec-1 {
+                height: auto;
+                width: auto;
+                background-color:#21243d;
+                padding: 15px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                flex-direction: column;
+            }
+        }
+
+        #sec-2 {
+            height: 500px;
+            width: auto;
+            background: url(home.svg);
+            background-repeat: no-repeat;
+            /* background-color: black; */
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            background-size: cover;
+        }
+        .sub1 {
+            /* border: 2px solid red; */
+            color: white;
+            font-size: 20px;
+            font-weight: 600;
+            gap: 50px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: column;
+        }
+        .sub1>.h1 {
+            font-size: 40px;
+            font-weight: 800;
+        }
+        .sub1>p {
+            font-size: 30px;
+            font-weight: 400;
+            gap: 15px;
+        }
+        .sub1>button {
+            width: 200px;
+            height: 50px;
+            color: white;
+            border-radius: 30px;
+            font-size: 15px;
+            background-color: #21243d;
+        }
+        @media only screen and(max-width:600px) {
+            #sec-2 {
+                height: 500px;
+                width: auto;
+                background: url(home.svg);
+                background-repeat: no-repeat;
+                background-color: black;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                background-size: cover;
+                flex-direction: column;
+            }
+        }
+
+        #sec-3 {
+            height: 600px;
+            width: auto;
+            background-color: #21243d;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            gap: 20px;
+        }
+        .sub-1 {
+            height: auto;
+            width: auto;
+            /* border: 2px solid red; */
+            color: white;
+            gap: 20px;
+        }
+        .sub-1>h1 {
+            font-size: 30px;
+            font-weight: 600;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 20px;
+        }
+        .sub-1>p {
+            font-size: 25px;
+            font-weight: 400;
+            text-align: center;
+            gap: 20px;
+        }
+        .sub-1-1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            gap: 50px;
+        }
+        .sub-2>img {
+            height: 200px;
+            width: 200px;
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        .sub-3>img {
+            height: 200px;
+            width: 200px;
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        .sub-4>img {
+            height: 200px;
+            width: 200px;
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        @media only screen and(max-width:600px) {
+            #sec-3 {
+                height: 500px;
+                width: auto;
+                background-color: #21243d;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+
+        #sec-4 {
+            height: 400px;
+            width: auto;
+            background-color: #ffd17e;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 20px;
+        }
+        #sec-4 .ord1>img {
+            height: 250px;
+            width: 250px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .photo2 {
+            /* border: 2px solid red; */
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .ord1-1>h1 {
+            font-weight: 600;
+            font-size: 30px;
+        }
+
+        .ord1-2>p {
+            font-size: 25px;
+            font-weight: 400;
+            gap: 15px;
+        }
+
+        .ord1-3>button {
+            height: 40px;
+            width: 100px;
+            background-color: #21243d;
+            border-radius: 7px;
+            color: white;
+        }
+
+        @media only screen and(max-width:600px) {
+            #sec-4 {
+                height: 400px;
+                width: auto;
+                background-color: #ffd17e;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                gap: 20px;
+                flex-direction: column;
+            }
+        }
+
+        #sec-5 {
+            height: 500px;
+            width: auto;
+            padding: 30px;
+            background-color: #21243d;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            color: white;
+            flex-direction: column;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .menu>h1 {
+            font-size: 40px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .menu>p {
+            font-size: 25px;
+            font-weight: 300;
+            text-align: center;
+        }
+
+        .menu-1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 60px;
+        }
+
+        .menu1 {
+            height: 150px;
+            width: 150px;
+            border: 5px solid white;
+            border-radius: 50%;
+            font-size: 40px;
+            font-weight: 600;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .menu2 {
+            height: 150px;
+            width: 150px;
+            border: 5px solid white;
+            border-radius: 50%;
+            font-size: 40px;
+            font-weight: 600;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .menu3 {
+            height: 150px;
+            width: 150px;
+            border: 5px solid white;
+            border-radius: 50%;
+            font-size: 40px;
+            font-weight: 600;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        @media only screen and (max-width:600px) {
+            #sec-5 {
+                height: 500px;
+                width: auto;
+                padding: 30px;
+                background-color: #21243d;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                color: white;
+                flex-direction: column;
+            }
+        }
+
+        #sec-6 {
+            height: 400px;
+            width: auto;
+            background-color: #ffd17e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+            justify-content: space-around;
+        }
+
+        #sec-6 .para-1 {
+            height: auto;
+            width: auto;
+            /* border: 2px solid red; */
+            display: flex;
+            /* justify-content: center;
+            align-items: center; */
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        #sec-6>h1 {
+            /* border: 2px solid red; */
+            font-weight: 600;
+            font-size: 30px;
+            color: #21243d;
+            text-align: center;
+        }
+
+        #sec-6>p {
+            font-size: 25px;
+            font-weight: 400;
+            color: #21243d;
+            gap: 20px;
+            text-align: center;
+        }
+
+        .btn>button {
+            height: 40px;
+            width: 150px;
+            background-color: #21243d;
+            border-radius: 10px;
+            color: white;
+        }
+
+        #sec-6 .para-2>img {
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @media only screen and (max-width:600px) {
+            #sec-6 {
+                height: 400px;
+                width: auto;
+                background-color: #ffd17e;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 40px;
+                justify-content: space-around;
+                flex-direction: column;
+            }
+        }
+
+        #sec-7 {
+            height: 600px;
+            width: auto;
+            /* background-color: #21243d; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-around;
+            background: url(bac1.svg);
+            flex-direction: column;
+        }
+
+        .sec7-1>img {
+            height: 250px;
+            width: 250px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sec7-2>p {
+            font-size: 30px;
+            font-weight: 400;
+            color: #21243d;
+            text-align: center;
+        }
+
+        .sec7-3>h1 {
+            font-size: 40px;
+            font-weight: 600;
+            color: #21243d;
+            text-align: center;
+        }
+
+        @media only screen and (max-width:600px) {
+            #sec-7 {
+                height: 600px;
+                width: auto;
+                /* background-color: #21243d; */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                justify-content: space-around;
+                background: url(bac1.svg);
+                flex-direction: column;
+            }
+
+        }
+
+        #sec-8 {
+            height: 500px;
+            width: auto;
+            background-color: #ffd17e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 100px;
+        }
+
+        .sec8-1>h1 {
+            font-size: 40px;
+            font-weight: 6000;
+            color: #21243d;
+            text-align: center;
+        }
+
+        .sec8-1>p {
+            font-size: 25px;
+            font-weight: 400;
+            color: #21243d;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .sec8-2>input {
+            height: 50px;
+            width: 500px;
+            border-radius: 20px;
+            text-align: start;
+            font-size: 18px;
+            font-weight: 800;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sec8-2>button {
+            height: 50px;
+            width: 150px;
+            border-radius: 20px;
+            background-color: #21243d;
+            color: white;
+            font-size: 20px;
+            font-weight: 600;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @media only screen and (max-width:600px) {
+            #sec-8 {
+                height: 500px;
+                width: auto;
+                background-color: #ffd17e;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                gap: 100px;
+            }
+        }
+
+        #sec-9 {
+            height: 500px;
+            width: auto;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            justify-content: space-around;
+        }
+
+        .sec9-1 {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            text-align: center;
+            gap: 20px;
+            flex-direction: column;
+            text-align: start;
+        }
+
+        .sec9-1>h1 {
+            font-size: 30px;
+            font-weight: 600;
+        }
+
+        .sec9-1>p {
+            font-size: 20px;
+            font-weight: 400;
+        }
+
+        .sec9-1-1 {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .sec9-1-1>i {
+            font-size: 30px;
+            font-weight: 400;
+            /* border: 2px solid red; */
+            color: black;
+            background-color: white;
+            border-radius: 50%;
+        }
+
+        .sec9-2 {
+            height: auto;
+            width: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .sec9-2>h1 {
+            font-size: 25px;
+            font-weight: 500;
+            gap: 15px;
+        }
+
+        .sec9-2>p {
+            font-size: 15px;
+            font-weight: 300;
+            gap: 20px;
+        }
+
+        .sec9-3 {
+            height: auto;
+            width: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .sec9-3>h1 {
+            font-size: 25px;
+            font-weight: 500;
+            gap: 15px;
+        }
+
+        .sec9-3>p {
+            font-size: 15px;
+            font-weight: 300;
+            gap: 20px;
+        }
+
+        .sec9-4 {
+            height: auto;
+            width: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .sec9-4>h1 {
+            font-size: 25px;
+            font-weight: 500;
+            gap: 15px;
+        }
+
+        .sec9-4>p {
+            font-size: 15px;
+            font-weight: 300;
+            gap: 20px;
+        }
+
+        @media only screen and (max-width:600px) {
+            #sec-9 {
+                height: 500px;
+                width: auto;
+                background-color: black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                justify-content: space-around;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="sec-1">
+        <div class="logo"></div>
+        <div class="link">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Product</a></li>
+                <li><a href="">Promo</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+        <div class="search-bar">
+            <i class='bx bx-search'></i>
+        </div>
+    </div>
+    <div id="sec-2">
+        <div class="sub1">
+            <h1>Title Here</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Molestias perferendis nesciunt neque
+                sequi consequuntur quam,<br> possimus, rem magni quaerat quidem quasi ipsum amet cupiditate error
+                fugiat!</p>
+            <button>ORDER NOW</button>
+        </div>
+    </div>
+    <div id="sec-3">
+        <div class="sub-1">
+            <h1>Popular Menu</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+                Vivamus lacinia odio vitae vestibulum vestibulum. </p>
+        </div>
+        <div class="sub-1-1">
+            <div class="sub-2">
+                <img src="4.svg" alt="">
+                <h1>Title Here</h1>
+                <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</p>
+            </div>
+            <div class="sub-3"><img src="food3.svg" alt="">
+                <h1>Title Here</h1>
+                <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</p>
+            </div>
+            <div class="sub-4">
+                <img src="food2.svg" alt="">
+                <h1>Title Here</h1>
+                <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</p>
+            </div>
+        </div>
+    </div>
+    <div id="sec-4">
+        <div class="photo1">
+            <div class="ord1">
+                <img src="5.svg" alt="">
+            </div>
+        </div>
+        <div class="photo2">
+            <div class="ord1-1">
+                <h1>Title Here</h1>
+            </div>
+            <div class="ord1-2">
+                <p>Lorem ipsum dolor sit amet, consectetur<br>
+                    adipiscing elit. Vivamus lacinia odio<br>
+                    vitae vestibulum vestibulum. </p>
+            </div>
+            <div class="ord1-3">
+                <button>ORDER NOW</button>
+            </div>
+        </div>
+    </div>
+    <div id="sec-5">
+        <div class="menu">
+            <h1>Statistics</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+                Vivamus lacinia odio vitae vestibulum vestibulum. </p>
+        </div>
+        <div class="menu-1">
+            <div class="menu1">123 Store</div>
+            <div class="menu2">100 Menu</div>
+            <div class="menu3">200 Cafe</div>
+        </div>
+    </div>
+    <div id="sec-6">
+        <div class="para-1">
+            <div class="par1">
+                <h1>Title Here</h1>
+            </div>
+            <div class="par2">
+                <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit. Vivamus<br>
+                    lacinia odio vitae vestibulum vestibulum. </p>
+            </div>
+            <div class="btn">
+                <button>ORDER NOW</button>
+            </div>
+        </div>
+        <div class="para-2">
+            <img src="6.svg" alt="">
+        </div>
+    </div>
+    <div id="sec-7">
+        <div class="sec7-1">
+            <img src="doc.svg" alt="">
+        </div>
+        <div class="sec7-2">
+            <p>If you are a culinary fan, if you like to spend time in <br>
+                your kitchen, you likely find yourself looking for <br>
+                reliable resources through which you can</p>
+        </div>
+        <div class="sec7-3">
+            <h1>Phoebe Frazier</h1>
+        </div>
+    </div>
+    <div id="sec-8">
+        <div class="sec8-1">
+            <h1>Title Here</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+                Vivamus lacinia odio vitae vestibulum vestibulum. </p>
+        </div>
+        <div class="sec8-2">
+            <input type="text" name="" placeholder="Your Email">
+            <button>Subscribe</button>
+        </div>
+    </div>
+    <div id="sec-9">
+        <div class="sec9-1">
+            <h1>Title Here</h1>
+            <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit. Aliquam at<br>
+                dignissim nunc, id maximus ex. Etiam <br>nec dignissim elit, at dignissim enim. </p>
+            <div class="sec9-1-1">
+                <i class='bx bxl-instagram'></i>
+                <i class='bx bxl-facebook'></i>
+                <i class='bx bxl-twitter'></i>
+                <i class='bx bxl-whatsapp'></i>
+            </div>
+        </div>
+        <div class="sec9-2">
+            <h1>About</h1>
+            <p>History<br>
+                Our Team<br>
+                Brand Guidelines<br>
+                Terms & Condition<br>
+                Privacy Policy</p>
+        </div>
+        <div class="sec9-3">
+            <h1>Services</h1>
+            <p>How to Order<br>
+                Our Product<br>
+                Order Status<br>
+                Promo<br>
+                Payment Method</p>
+        </div>
+        <div class="sec9-4">
+            <h1>Other</h1>
+            <p>Contact Us<br>
+                Help<br>
+                Privacy
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
